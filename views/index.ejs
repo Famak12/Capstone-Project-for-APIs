@@ -18,11 +18,11 @@
             <input type="text" name="longitude" id="">
             <label for="date">Date:</label>
             <input type="date" name="date" id="">
-            <input type="submit" value="SEND" formaction="/post-data">
+            <input type="submit" value="SEND" formaction="/post-data" class="btn">
             </form>
         </div>
         <% if (locals.sunrise && locals.sunset) { %>     
-        <div>
+        <div class="info-div">
             <h3> Sunrise time: <%= sunrise %> </h3>
             <h3> Sunset time: <%= sunset %> </h3>
 

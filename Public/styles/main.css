@@ -7,16 +7,35 @@ body {
 
 }
 
+
 .container {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 70%;
     height: 70vh;
-    border: 1px solid black;
     border-radius:10px;
+    background: linear-gradient(300deg, black, rgb(128, 16, 136)), rgb(5, 5, 114) ;
+    background-size: 180% 180%;
+    box-shadow: 2px 2px 5px black;
+    animation: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes example {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 .container > div {
    background-color: black;
@@ -24,6 +43,7 @@ body {
     padding: 2rem;
     color: white;
     margin: 10px;
+    box-shadow: 0 0 10px black;
     
 }
 
@@ -31,3 +51,46 @@ body {
     display: block;
 
 }
+
+.info-div {
+    box-shadow: 0 0 10px black;
+    animation: fadeInAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .70;
+    }
+}
+
+.btn {
+    width: 80px;
+}
+
+.container > h1 {
+    overflow: hidden; 
+  border-right: .15em solid rgb(255, 255, 254); 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 5s steps(40),
+    blink-caret .75s step-end infinite;
+
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
