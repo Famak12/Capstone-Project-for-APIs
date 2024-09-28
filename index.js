@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 
 const app = express();
 const port = 3000;
-const message = "Hello World";
+const message = "The latitude and longitutde must be enterned in decimals";
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -35,4 +35,4 @@ app.post("/post-data", async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-})
+});
