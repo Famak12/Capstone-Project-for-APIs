@@ -1,5 +1,10 @@
 body {
-    margin: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container {
@@ -7,8 +12,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
     height: 70vh;
+    border: 1px solid black;
+    border-radius:10px;
 }
 
 .container > div {
@@ -17,6 +24,7 @@ body {
     padding: 2rem;
     color: white;
     margin: 10px;
+    
 }
 
 .container > div > input {
