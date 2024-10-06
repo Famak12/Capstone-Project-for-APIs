@@ -17,7 +17,7 @@ body {
     width: 70%;
     height: 70vh;
     border-radius:10px;
-    background: linear-gradient(300deg, black, rgb(128, 16, 136)), rgb(5, 5, 114) ;
+    background: linear-gradient(300deg, black, rgb(128, 16, 136), rgb(5, 5, 114)) ;
     background-size: 180% 180%;
     box-shadow: 2px 2px 5px black;
     animation: example;
